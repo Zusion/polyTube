@@ -1,13 +1,13 @@
 {
-"name":"polyTube",
-"version":"0.2",
-"description":"Replaces Polygon's default player with a YouTube embed if it exists.",
-"manifest_version":2,
-"content_scripts": [
-    {
-      "matches": ["*://www.polygon.com/*"],
-      "js": ["polyTube.js"],
-	  "run_at": "document_end"
-    }
-  ]
+	"name": "polyTube",
+	"version": "0.2",
+	"description": "Replaces Polygon's default player with a YouTube embed if it exists.",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"matches": ["http://www.polygon.com/*"],
+			"js": ["polyTube.js"],
+			"run_at": "document_end"
+		}
+	]
 }

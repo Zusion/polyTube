@@ -16,7 +16,7 @@ if (document.body.innerHTML.indexOf("video-wrap p-scalable-video") != -1)
 function replace(ytId)
 {		
 	var classArr = document.getElementsByClassName("video-wrap");
-	classArr[0].innerHTML = "<iframe src=\"https:\/\/www.youtube.com/embed/" + ytId + "\" frameborder=\"0\" allowfullscreen></iframe>";
+	classArr[0].innerHTML = "<iframe src=\"https:\/\/www.youtube.com/embed/" + ytId + "?iv_load_policy=3\" frameborder=\"0\" allowfullscreen></iframe>";
 }
 
 // Extracts the video id from the URL.

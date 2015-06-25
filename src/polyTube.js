@@ -1,8 +1,8 @@
 // Looks for the Vox Media player element.
 if (document.body.innerHTML.indexOf("video-wrap p-scalable-video") != -1)
 {
-	// Checks if a "Watch on YouTube" link exists in the article.
-	if (document.getElementById("article-body").innerHTML.indexOf(">Watch on YouTube<") != -1)
+	// Checks if a "Watch on YouTube" or "Watch in 60fps on YouTube" link exists in the article.
+	if (document.getElementById("article-body").innerHTML.indexOf("on YouTube<") != -1)
 	{
 		var ytURL = document.getElementById("article-body").getElementsByTagName("a")[0].href; // Extracts the URL from the "Watch on Youtube" link. Assumes the needed <a> tag is always the first. Which it seems to be. *shrug*
 		
